@@ -60,8 +60,11 @@ fn rewrite_cargo_toml(
                 });
                 if !known_path_deps.contains_key(&dep_name) {
                     bail!(
-                        "cargo metadata does not know about the path for {} {} present in {}, which should never happen ಠ_ಠ",
-                        dep_category, dep_name, manifest_path.as_ref().display()
+                        "cargo metadata does not know about the path for {}.{} present in {}, \
+                        which should never happen ಠ_ಠ",
+                        dep_category,
+                        dep_name,
+                        manifest_path.as_ref().display()
                     );
                 }
             }

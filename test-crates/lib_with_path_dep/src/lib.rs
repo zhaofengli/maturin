@@ -4,7 +4,7 @@ use pyo3::prelude::*;
 
 fn add(x: usize, y: usize) -> usize {
     let sum = some_path_dep::add(x, y);
-    debug_assert!(some_path_dep(x, y, sum));
+    debug_assert!(some_path_dep::is_sum(x, y, sum));
     sum
 }
 
