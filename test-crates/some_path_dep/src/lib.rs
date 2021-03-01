@@ -1,3 +1,5 @@
+pub use path_dep_of_path_dep::is_sum;
+
 pub fn add(x: usize, y: usize) -> usize {
     x + y
 }
