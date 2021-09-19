@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - buildx-cache
   pull_request:
 
 jobs:
